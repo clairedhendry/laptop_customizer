@@ -9,7 +9,7 @@ export default class CustomizeLaptop extends React.Component {
           const features = Object.keys(this.props.features).map((feature, idx) => {
             
             const featureHash = feature + '-' + idx;
-            //fieldset containing items
+         
             return (
               <fieldset className="feature" key={featureHash}>
                 <legend className="feature__name">
