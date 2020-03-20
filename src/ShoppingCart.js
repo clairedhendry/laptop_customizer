@@ -1,7 +1,7 @@
 import React from "react";
 import Summary from "./Summary";
 import Total from "./Total"
-import './App.css';
+
 
 export default class ShoppingCart extends React.Component {
     render() {
@@ -15,4 +15,3 @@ export default class ShoppingCart extends React.Component {
 
 
 }
-

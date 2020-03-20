@@ -30,7 +30,6 @@ class App extends Component {
   };
 
   
-  //shopping cart updates state of selected
   updateFeature = (feature, newValue) => {
     const selected = Object.assign({}, this.state.selected);
     selected[feature] = newValue;
@@ -49,12 +48,14 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <main>
         <CustomizeLaptop features={this.props.features} 
         selected={this.state.selected} 
         updateFeature={this.updateFeature}/>
         <ShoppingCart features={this.props.features} 
         selected={this.state.selected}
         currency={USCurrencyFormat}/>
+        </main>
       </div>
     );
   }
